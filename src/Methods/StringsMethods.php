@@ -341,7 +341,7 @@ class StringsMethods
         }
 
         // Trim and return
-        return trim(str_replace($remove, null, $string));
+        return trim(str_replace($remove, '', $string));
     }
 
     /**

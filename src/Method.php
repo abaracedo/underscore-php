@@ -118,7 +118,7 @@ class Method
      */
     public static function isUnchainable($class, $method)
     {
-        $class = str_replace('Underscore\Types\\', null, $class);
+        $class = str_replace('Underscore\Types\\', '', $class);
 
         return in_array($class.'::'.$method, static::$unchainable, true);
     }
